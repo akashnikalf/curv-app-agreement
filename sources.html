@@ -29,7 +29,7 @@ b{font-weight:600}
 <body>
 
 <h1 id="page-title">Scientific Sources</h1>
-<p class="meta" id="page-meta">Last updated: 2026-10-08</p>
+<p class="meta" id="page-meta">Last updated: 2026-11-05</p>
 
 <div class="lang-switch">
   <button id="btn-en" onclick="switchLang('en')">English</button>
@@ -77,6 +77,13 @@ b{font-weight:600}
 <h2>Physical Activity</h2>
 <ul>
 <li>World Health Organization (WHO). <i>WHO Guidelines on Physical Activity and Sedentary Behaviour</i>, 2020. Recommends 150–300 minutes of moderate-intensity aerobic activity per week. <a href="https://www.who.int/publications/i/item/9789240015128" target="_blank">WHO Publication</a></li>
+</ul>
+
+<h2>Body Mass Index (BMI)</h2>
+<ul>
+<li>BMI is calculated as weight (kg) divided by height squared (m²). World Health Organization (WHO). "A healthy lifestyle — WHO recommendations." WHO classification: underweight &lt; 18.5, normal 18.5–24.9, overweight 25.0–29.9, obesity ≥ 30.0. <a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank">WHO Fact Sheet: Obesity and Overweight</a></li>
+<li>World Health Organization (WHO). <i>Obesity: Preventing and Managing the Global Epidemic.</i> WHO Technical Report Series 894, 2000. <a href="https://www.who.int/publications/i/item/9789241208949" target="_blank">WHO Publication</a></li>
+<li>WHO Expert Consultation. "Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies." <i>The Lancet</i>, 2004; 363(9403):157–63. <a href="https://doi.org/10.1016/S0140-6736(03)15268-4" target="_blank">doi:10.1016/S0140-6736(03)15268-4</a></li>
 </ul>
 
 <h2>Menstrual Cycle</h2>
@@ -152,6 +159,13 @@ b{font-weight:600}
 <li>世界卫生组织 (WHO).《身体活动和久坐行为指南》2020 年。建议每周进行 150–300 分钟中等强度有氧运动。<a href="https://www.who.int/publications/i/item/9789240015128" target="_blank">WHO 出版物</a></li>
 </ul>
 
+<h2>身体质量指数 (BMI)</h2>
+<ul>
+<li>BMI = 体重 (kg) ÷ 身高² (m²)。世界卫生组织 (WHO) 分类标准：偏瘦 &lt; 18.5，正常 18.5–24.9，超重 25.0–29.9，肥胖 ≥ 30.0。<a href="https://www.who.int/news-room/fact-sheets/detail/obesity-and-overweight" target="_blank">WHO 肥胖与超重概况介绍</a></li>
+<li>世界卫生组织 (WHO).《肥胖：预防和控制全球流行》WHO 技术报告系列 894，2000 年。<a href="https://www.who.int/publications/i/item/9789241208949" target="_blank">WHO 出版物</a></li>
+<li>WHO 专家咨询组. "Appropriate body-mass index for Asian populations and its implications for policy and intervention strategies."《The Lancet》2004; 363(9403):157–63. <a href="https://doi.org/10.1016/S0140-6736(03)15268-4" target="_blank">doi:10.1016/S0140-6736(03)15268-4</a></li>
+</ul>
+
 <h2>月经周期</h2>
 <h3>周期长度与排卵</h3>
 <ul>
@@ -189,7 +203,7 @@ function switchLang(lang) {
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   document.getElementById('btn-zh').classList.toggle('active', lang === 'zh');
   document.getElementById('page-title').textContent = lang === 'zh' ? '科学引用来源' : 'Scientific Sources';
-  document.getElementById('page-meta').textContent = lang === 'zh' ? '最后更新：2026-10-08' : 'Last updated: 2026-10-08';
+  document.getElementById('page-meta').textContent = lang === 'zh' ? '最后更新：2026-11-05' : 'Last updated: 2026-11-05';
 }
 (function() {
   var lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
