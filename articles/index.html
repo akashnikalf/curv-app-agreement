@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CURV 科普 · CURV Library</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap">
+<style>
+  :root{
+    --bg:#FBF7F8; --ink:#2B1A24; --muted:#6E5A66; --line:#EADDE3;
+    --plum:#7D003E; --plum-soft:#F3E4EC; --surface:#FFFFFF;
+    --display:"Bricolage Grotesque",system-ui,sans-serif;
+    --body:"Nunito Sans",-apple-system,"PingFang SC",sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+    font-size:17px;line-height:1.75;letter-spacing:.005em;
+  }
+  .page{max-width:720px;margin:0 auto;padding:44px 22px 56px}
+  .eyebrow{
+    font-size:11px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--plum);margin:0 0 12px
+  }
+  h1{
+    font-family:var(--display);font-size:36px;line-height:1.15;font-weight:700;
+    margin:0 0 14px;letter-spacing:-.015em
+  }
+  .lede{color:var(--muted);font-size:17px;line-height:1.7;margin:0 0 8px}
+  .lede-en{color:var(--muted);font-size:14px;line-height:1.65;margin:0 0 32px}
+  .rule{height:1px;background:var(--line);margin:0 0 28px}
+  .list{display:grid;gap:14px}
+  .card{
+    display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:20px;padding:22px 20px;
+    transition:transform .18s ease, box-shadow .18s ease
+  }
+  .card:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(125,0,62,.08)}
+  .card .tag{
+    font-size:10.5px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--plum);margin-bottom:8px
+  }
+  .card h2{
+    font-family:var(--display);font-size:23px;line-height:1.25;font-weight:700;
+    margin:0 0 4px;letter-spacing:-.01em
+  }
+  .card .sub{font-size:13.5px;color:var(--muted);margin:0 0 9px}
+  .card .desc{font-size:14.5px;color:var(--muted);line-height:1.6;margin:0 0 14px}
+  .card .meta{
+    display:flex;align-items:center;justify-content:space-between;
+    font-size:12.5px;color:var(--muted)
+  }
+  .card .read{color:var(--plum);font-weight:700}
+  .card .read span{display:inline-block;margin-left:4px;transition:transform .18s ease}
+  .card:hover .read span{transform:translateX(3px)}
+  .note{
+    margin-top:30px;padding:14px 16px;border-radius:14px;background:var(--plum-soft);
+    color:var(--muted);font-size:12.5px;line-height:1.6
+  }
+  .footer{margin-top:26px;color:var(--muted);font-size:11px;line-height:1.6}
+  .footer a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line)}
+  @media (max-width:420px){
+    .page{padding:34px 18px 44px}
+    h1{font-size:30px}
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <p class="eyebrow">CURV 科普 · CURV Library</p>
+  <h1>女性健康，讲得明白一点。</h1>
+  <p class="lede">由 CURV 医学顾问团队审阅的科普文章。没有吓人的术语，只有你真正用得上的信息。</p>
+  <p class="lede-en">Evidence-informed guides, reviewed by the CURV medical team. Clear answers, without the scare tactics.</p>
+  <div class="rule"></div>
+
+  <div class="list">
+    <a class="card" href="./postpartum-first-six-weeks.html">
+      <p class="tag">产后 · Postpartum</p>
+      <h2>产后的第一个六周</h2>
+      <p class="sub">Your first six weeks after birth</p>
+      <p class="desc">什么正常、什么有帮助、什么时候该求助。一份平静的指南，陪你走过身体付出最多的一段恢复期。</p>
+      <p class="meta">
+        <span>Zainab Artan 医生 · Dr Zainab Artan</span>
+        <span class="read">阅读全文 <span>→</span></span>
+      </p>
+    </a>
+  </div>
+
+  <div class="note">
+    内容仅供科普，不能替代你的医生或助产士给出的个体化建议。
+    <br>This is general information and does not replace individual advice from your doctor or midwife.
+  </div>
+
+  <p class="footer">
+    CURV · <a href="https://app.curv.zone/privacy">隐私政策 / Privacy</a> ·
+    <a href="https://app.curv.zone/terms">用户协议 / Terms</a>
+  </p>
+</main>
+</body>
+</html>
